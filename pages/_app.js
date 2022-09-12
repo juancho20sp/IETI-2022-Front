@@ -1,5 +1,4 @@
-import '../styles/globals.css';
-import { wrapper } from '../utils/store/store';
+import '../styles/globals.scss';
 
 // Redux
 import store from '../utils/store/store';

@@ -1,0 +1,10 @@
+.login {
+    &__container {
+        background-color: var(--white);
+        height: 100%;
+
+        @include bp(sm) {
+            background-color: red;
+        }
+    }
+}
