@@ -5,7 +5,9 @@
 }
 
 #__next {
+    display: grid;
     height: 100%;
+    place-items: center;
     width: 100%;
 }
 
