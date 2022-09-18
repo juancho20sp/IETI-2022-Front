@@ -1,0 +1,84 @@
+.login {
+    #{--login-container-height}: 100%;
+    #{--login-container-width}: 80vw;
+
+    #{--login-main-border-color}: unset;
+    #{--login-main-border-radius}: 10px;
+    #{--login-main-height}: 60vh;
+    #{--login-main-padding}: 15px;
+    #{--login-main-width}: 100%;
+    
+    #{--login-main-icon-color}: unset;
+    #{--login-main-icon-font-size}: 6rem;
+    #{--login-main-icon-height}: 30%;
+
+    #{--login-form-container-actions-button-width}: 45%;
+    #{--login-form-container-height}: 50%;
+
+    @include bp(sm) {
+    }
+    @include bp(md) {
+        #{--login-container-width}: 70vw;
+        #{--login-main-icon-font-size}: 7rem;
+    }
+    @include bp(lg) {
+        #{--login-container-width}: 40vw;
+        #{--login-main-icon-font-size}: 7.5rem;
+    }
+    @include bp(xl) {
+        #{--login-container-width}: 30vw;
+        #{--login-main-icon-font-size}: 7.5rem;
+    }
+
+    &__container {
+        background: var(--background);
+        align-items: center;
+        display: flex;
+        height: var(--login-container-height);
+        justify-content: center;
+        width: var(--login-container-width); 
+    }
+
+    &__main {
+        border-radius: var(--login-main-border-radius);
+        border: 2px solid var(--login-main-border-color);
+        display: flex;
+        flex-direction: column;
+        height: var(--login-main-height);
+        justify-content: space-evenly;
+        padding: var(--login-main-padding);
+        width: var(--login-main-width);
+
+        &--icon { 
+            color: var(--login-main-icon-color);
+            display: grid;
+            font-size: var(--login-main-icon-font-size);
+            height: var(--login-main-icon-height);
+            place-items: center;
+        }
+
+        .form {
+            &__container {
+                display: flex;
+                flex-direction: column;
+                height: var(--login-form-container-height);
+                justify-content: space-between;
+            }
+        
+            &__actions {
+                display: flex;
+                justify-content: space-between;
+        
+                &--button {
+                    width: var(--login-form-container-actions-button-width);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+

@@ -4,7 +4,6 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 
 config.autoAddCss = false;
 
-
 // Redux
 import store from '../utils/store/store';
 import { Provider } from 'react-redux';

@@ -5,12 +5,10 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   sassOptions: {
-    includePaths: [
-      // path.join(__dirname, 'styles/config/_all.scss'),
-      path.join(__dirname, 'styles/components'),
-    ],
+    includePaths: [ ],
     additionalData: `
             @import "styles/config/_all.scss";
+            @import "styles/components/_all.scss";
           `,
   },
 };
