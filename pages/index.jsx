@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import styles from '../styles/Login.module.scss';
+// import styles from '../styles/components/Login.module.scss';
+import styles from '/styles/components/Login.module.scss';
 
 // MUI
 import { Container } from '@mui/system';

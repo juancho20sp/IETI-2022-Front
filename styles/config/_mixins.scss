@@ -1,24 +1,24 @@
 @mixin bp ($screen-size) {
     @if $screen-size == sm {
-        @media only screen and (max-width: 480px)  {
+        @media only screen and (max-width: $sm-end)  {
             @content;
         }
     }   
 
     @if $screen-size == md {
-        @media only screen and (max-width: 768px)  {
+        @media only screen and (min-width: $md-start) and (max-width: $md-end)  {
             @content;
         }
     } 
 
     @if $screen-size == lg {
-        @media only screen and (max-width: 1440px)  {
+        @media only screen and (min-width: $lg-start) and (max-width: $lg-end)  {
             @content;
         }
     }
 
     @if $screen-size == xl {
-        @media only screen and (min-width: 1440px)  {
+        @media only screen and (min-width: $xl-start)  {
             @content;
         }
     }

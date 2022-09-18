@@ -1,0 +1,19 @@
+.login {
+    &__container {
+        background-color: var(--white);
+        height: 100%;
+
+        @include bp(sm) {
+            background-color: $dark-blue;
+        }
+        @include bp(md) {
+            background-color: $dark-mustard;
+        }
+        @include bp(lg) {
+            background-color: $light-purple;
+        }
+        @include bp(xl) {
+            background-color: $light-gray;
+        }
+    }
+}
