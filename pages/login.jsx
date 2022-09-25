@@ -68,6 +68,7 @@ export default function Login() {
             className='login__input--email'
             label='Email'
             variant='outlined'
+            value={email}
             onChange={(ev) => setEmail(ev.target.value)}
           />
 
@@ -78,6 +79,7 @@ export default function Login() {
             label='Password'
             type='password'
             variant='outlined'
+            value={password}
             onChange={(ev) => setPassword(ev.target.value)}
           />
 
