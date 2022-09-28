@@ -12,8 +12,8 @@ const usePost = () => {
       });
 
       return response.json();
-    } catch (e) {
-      throw new Error(e);
+    } catch(err) {
+      console.error(err);
     }
   };
 

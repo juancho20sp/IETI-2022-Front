@@ -15,16 +15,16 @@
     #{--login-form-container-actions-button-width}: 45%;
     #{--login-form-container-height}: 50%;
 
-    @include bp(sm) {
-    }
     @include bp(md) {
         #{--login-container-width}: 70vw;
         #{--login-main-icon-font-size}: 7rem;
     }
+
     @include bp(lg) {
         #{--login-container-width}: 40vw;
         #{--login-main-icon-font-size}: 7.5rem;
     }
+
     @include bp(xl) {
         #{--login-container-width}: 30vw;
         #{--login-main-icon-font-size}: 7.5rem;

@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react';
+import jwt from 'jsonwebtoken';
 
 // Custom Hooks
 import { usePost } from '../';
@@ -24,6 +25,7 @@ const useLogin = () => {
         const response = await post(url, data);
 
         console.log(response);
+        console.log(jwt.decode(response.token));
 
 
     }
