@@ -91,7 +91,7 @@ export default function Login() {
               onClick={() => {
                 login();
                 isLoggedIn ? dispatch(reduxLogout()) : dispatch(reduxLogin());
-                router.push('/');
+                router.push('/tasks');
               }}
             >
               {/* Login */}
