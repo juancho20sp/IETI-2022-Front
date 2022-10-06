@@ -28,7 +28,7 @@ export default function Home() {
     if (!isLoggedIn) {
       router.push('/login');
     }
-  }, [isLoggedIn]);
+  }, [isLoggedIn, router]);
 
   // Set MUI variables
   useEffect(() => {

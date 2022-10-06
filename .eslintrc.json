@@ -2,7 +2,7 @@
   "extends": "next/core-web-vitals",
   "rules": {
     "semi": [2, "always"],
-    "singleQuote": true,
+    "quotes": [2, "single", { "avoidEscape": true }],
     "jsx-quotes": [2, "prefer-single"]
   }
 }

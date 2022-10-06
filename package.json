@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky install",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
@@ -25,9 +27,19 @@
     "react-redux": "^8.0.2"
   },
   "devDependencies": {
-    "eslint": "8.23.0",
+    "eslint": "^8.23.0",
     "eslint-config-next": "12.2.5",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1",
     "sass": "^1.54.8",
     "scss": "^0.2.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "react-app",
+      "react-app/jest",
+      "prettier"
+    ]
   }
 }
