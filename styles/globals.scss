@@ -1,3 +1,7 @@
+
+@import './config/all';
+@import './components/all';
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,9 +16,38 @@
     background-color: rgba($color: #000000, $alpha: 0.1);
 }
 
+.dark {
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    color: white;
+}
+
+.light {
+    background-color: initial;
+    color: initial;
+}
+
+.button__toggle-theme {
+    border-radius: 15px;
+    height: 2rem;
+    padding: 0 5px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 5rem;
+
+    &.dark {
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        text-align: start;
+    }
+
+    &.light {
+        background-color: rgba($color: #fff, $alpha: 0.8);
+        text-align: end;
+    }
+}
+
 body {
     height: 100vh;
     width: 100vw;
 }
 
-@import './components/all';

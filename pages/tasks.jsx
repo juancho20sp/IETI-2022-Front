@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 import React from 'react';
 
 // MUI
@@ -6,10 +7,21 @@ import Typography from '@mui/material/Typography';
 // Components
 import { MuiCard } from '../components';
 
+// Hooks
+import { useColorMode } from '../utils/hooks';
+
 const Tasks = ({ tasks }) => {
+  const { 
+    isDarkMode,
+    toggleDarkMode
+  } = useColorMode();
+
   return (
-    <div className='tasks tasks__container'>
-      <Typography className='tasks__title' variant='h3' component='p'>
+    <div className={`tasks tasks__container ${isDarkMode ? 'light' : 'dark'}`}>
+      <button className={`button__toggle-theme ${isDarkMode ? 'light' : 'dark'}`} onClick={toggleDarkMode}>
+        {isDarkMode ? '☀️' : '🌙'}
+      </button>
+      <Typography className={`tasks__title`}variant='h3' component='p'>
         Tasks
       </Typography>
 

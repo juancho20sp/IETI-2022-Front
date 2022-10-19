@@ -3,19 +3,12 @@ import { authSlice } from './auth/authSlice';
 import { createWrapper } from 'next-redux-wrapper';
 
 import authReducer from './auth/authSlice';
-
-// const makeStore = () => {
-//     configureStore({
-//         reducer: {
-//             [authSlice.name]: authSlice.reducer,
-//         },
-//         devTools: true,
-//     });
-// };
+import colorModeReducer from './styles/colorModeSlice';
 
 export default configureStore({
     reducer: {
-        auth: authReducer
+        auth: authReducer,
+        colorMode: colorModeReducer
     },
     devTools: true
 });
